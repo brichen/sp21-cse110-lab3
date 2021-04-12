@@ -9,8 +9,7 @@
     <body>
         <h1>Brian's Journal</h1>
         <hr>
-        <span>
-        <h2>Table of Contents:</h3>
+        <h2>Table of Contents:</h2>
                 <nav>
                     <ul>
                         <li><a href="#day1">April 9</a></li>
@@ -18,7 +17,6 @@
                         <li><a href="#day3">April 11</a></li>
                     </ul>
             </nav>
-        </span>
         <hr>
         <main>
             <h3 id="day1">April 9th, 2021</h3>
@@ -53,25 +51,26 @@
             <h3>Create a new journal entry</h3>
             <form action="form" method="get" class="form-example">
                 <fieldset>
-                  <label for="date">Enter the date: </label>
-                  <input type="date" required><br>
+                    <input type="date" id="time" required><br>
+                    <label for="time">Enter the date: </label>
 
-                  <label for="text">Enter text: </label>
-                  <input type="text" name="text" id="text" required><br>
-                
-                  <p>Who are you?</p>
-                  <input type="radio" id="Brian">
-                  <label for="Brian">I am Brian</label><br>
-                  <input type="radio" id="not">
-                  <label for="not">I am not Brian</label><br>
+                    <label for="text">Enter text: </label>
+                    <input type="text" name="text" id="text" required><br>
+                    
+                    <p>Who are you?</p>
+                    <input type="radio" id="Brian">
+                    <label for="Brian">I am Brian</label><br>
+                    <input type="radio" id="not">
+                    <label for="not">I am not Brian</label><br>
 
-                <p>Are you a robot?</p>
-                  <input type="checkbox" id="robot" name="robot">
-                  <label for="robot"> I am not a robot</label><br><br>
+                    <p>Are you a robot?</p>
+                    <input type="checkbox" id="robot" name="robot">
+                    <label for="robot"> I am not a robot</label><br><br>
 
-                <input type="button" value="Submit"><br>
+                    <input type="button" value="Submit"><br>
                 </fieldset>
             </form>
+            <span></span>
         </main>
 
         <hr />
