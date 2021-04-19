@@ -1,0 +1,112 @@
+/* universal selector */
+*{
+    background-color:#0D1117;
+}
+
+body,footer {
+    position: static;
+    font-family: "Roboto", sans-serif;
+    color:rgb(201, 209, 217);
+    height:auto;
+    width: auto;
+}
+
+div p {
+    font-size:100%;
+}
+
+div>h3{
+    font-size: 1.5rem;
+}
+
+h3+p{
+    color: rgb(201, 209, 217);
+}
+
+p~details{
+    margin: 50px 50px 50px 50px;
+}
+
+a[href="#day1"] {
+    color:white;
+}
+
+a:visited {
+    color:purple;
+}
+
+a:hover {
+    color:white;
+}
+
+div.entry{
+    position: relative;
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left: 37.5pt;
+    margin-right: auto;
+    line-height: 1.5em;
+    max-height: fit-content;
+    max-width: fit-content;
+}
+
+p.void {
+    display:none;
+}
+
+p.in {
+    display:inline-block;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-shrink: 3;
+    border-style:solid;
+    border-radius:10px;
+}
+
+.grid-container {
+    padding-top:10px;
+    display:grid;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+}
+
+.newEntry{
+    margin:auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: solid;
+    border-color:white;
+    border-width: 1px;
+    border-radius:10px;
+}
+
+#journal{
+    color:hsl(210,17.4,82);
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+#toc {
+    text-decoration: underline;
+    margin: 0.2645833333cm 0.2645833333cm 0.2645833333cm 0.396875cm;
+    height:110px;
+    width:500px;
+}
+
+@media only screen and (max-width: 1000px) {
+    * {
+        background-color:aquamarine;
+        color:black;
+    }
+    h3+p{
+        color: black;
+    }
+}
